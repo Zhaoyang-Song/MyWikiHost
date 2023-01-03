@@ -1,0 +1,46 @@
+site_name: MyWiki
+repo_url: https://github.com/Zhaoyang-Song/MyWikiHost
+repo_name: Zhaoyang-Song/MyWikiHost
+
+
+theme:
+  name: material
+  language: zh  # 语言
+  logo: _assets/logo.svg  # docs 为根目录
+  favicon: _assets/logo.svg  # docs 为根目录
+  icon:
+    repo: fontawesome/brands/git-alt
+  highlightjs: true
+  font:
+    text: Karla
+    code: Ubuntu Mono
+  # 暗黑模式切换
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  # 暗黑模式切换设置结束
+  features:
+    - navigation.instant  # 即时加载，启用后将通过 XHR 拦截和分派对所有内部链接的点击，而无需完全重新加载页面
+    - navigation.tracking  # 锚点跟踪，启用后地址栏中的 URL 会自动更新为目录中突出显示的活动锚点
+    - navigation.tabs  # 导航标签，启用选项卡后，顶级部分呈现在上方视口标题下方的菜单层中 1220px 但在移动设备上保持原样
+    - navigation.tabs.sticky  # 顶部导航栏不会因为往下滑而不见，设置之后就是固定导航栏
+    - toc.follow
+    - navigation.top  # 返回顶部按钮
+    - navigation.footer  # footer 上一页下一页导航启用
+
+
+copyright: Copyright &copy; 2021 - Present | Zhaoyang Song.

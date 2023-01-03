@@ -1,1 +1,1 @@
-# MyWikiHost
+MyWikiHost
