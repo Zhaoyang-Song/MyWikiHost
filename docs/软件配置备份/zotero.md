@@ -144,6 +144,10 @@ async function getFilePath(item) { //1 函数
 }
 ```
 
+## Zotero IF 插件
+
+该插件由“青柠学术”开发，需要去公众号回复获得安装包（作者github上也有号，但还是引流回微信公众号了）
+
 ## Links
 
 [Zotero CN](https://zotero-cn.github.io/)

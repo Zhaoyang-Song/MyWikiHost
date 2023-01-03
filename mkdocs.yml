@@ -1,19 +1,37 @@
+# 站点信息
 site_name: MyWiki
+site_description: MyWikiHost
+site_author: Zhaoyang Song
+site_url: https://zhaoyang-song.github.io/MyWikiHost
+
+# 右上角仓库设置
 repo_url: https://github.com/Zhaoyang-Song/MyWikiHost
 repo_name: Zhaoyang-Song/MyWikiHost
 
+# 导航设置
+nav:
+  - Home: index.md
+  - 软件配置备份:
+      - mkdocs-material: 软件配置备份/mkdocs-material.md
+      - zotero: 软件配置备份/zotero.md
+      - SumatraPDF: 软件配置备份/SumatraPDF.md
+      - vscode配置LaTeX: 软件配置备份/VSCode配置LaTeX.md
 
+# 主题设置
 theme:
   name: material
   language: zh  # 语言
   logo: _assets/logo.svg  # docs 为根目录
   favicon: _assets/logo.svg  # docs 为根目录
   icon:
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/git-alt    # 右上角仓库的icon
   highlightjs: true
+
+  # 字体设置
   font:
-    text: Karla
+    text: Ubuntu
     code: Ubuntu Mono
+  
   # 暗黑模式切换
   palette:
     # Light mode
@@ -32,7 +50,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
-  # 暗黑模式切换设置结束
+  
+  # 一些特性
   features:
     - navigation.instant  # 即时加载，启用后将通过 XHR 拦截和分派对所有内部链接的点击，而无需完全重新加载页面
     - navigation.tracking  # 锚点跟踪，启用后地址栏中的 URL 会自动更新为目录中突出显示的活动锚点
@@ -42,5 +61,44 @@ theme:
     - navigation.top  # 返回顶部按钮
     - navigation.footer  # footer 上一页下一页导航启用
 
+# markdown插件
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
 
+# 数学公式支持，需要额外的js
+extra_javascript:
+    - '_javascripts/extra.js'
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+
+# 支持中文搜索，虽然原生暂时不支持，但发现设置成日语后也能够同时中英搜索
+extra:
+  search:
+    language: 'jp'
+
+# copyright
 copyright: Copyright &copy; 2021 - Present | Zhaoyang Song.
