@@ -19,13 +19,17 @@ nav:
 
 # 主题设置
 theme:
-  name: material
+  name: material  # 主题选择，现在启用material
   language: zh  # 语言
-  logo: _assets/logo.svg  # docs 为根目录
-  favicon: _assets/logo.svg  # docs 为根目录
+  logo: _assets/logo.svg  # logo图像设置，docs 为根目录
+  favicon: _assets/logo.svg  # favicon图像设置，docs 为根目录
   icon:
     repo: fontawesome/brands/git-alt    # 右上角仓库的icon
-  highlightjs: true
+  highlightjs: true  # 代码高亮支持，using the highlight.js JavaScript library，默认true
+  hljs_style : github  # highlight.js库提供了79种不同的样式用于突出显示代码块中的源代码，默认就是github
+  hljs_languages:  # 默认highlight.js只支持23个常见语言，在此处列出其他语言以包括对它们的支持 
+        - yaml
+        - shell
 
   # 字体设置
   font:
@@ -56,49 +60,61 @@ theme:
     - navigation.instant  # 即时加载，启用后将通过 XHR 拦截和分派对所有内部链接的点击，而无需完全重新加载页面
     - navigation.tracking  # 锚点跟踪，启用后地址栏中的 URL 会自动更新为目录中突出显示的活动锚点
     - navigation.tabs  # 导航标签，启用选项卡后，顶级部分呈现在上方视口标题下方的菜单层中 1220px 但在移动设备上保持原样
-    - navigation.tabs.sticky  # 顶部导航栏不会因为往下滑而不见，设置之后就是固定导航栏
-    - toc.follow
+    # - navigation.tabs.sticky  # 顶部导航栏不会因为往下滑而不见，设置之后就是固定导航栏
+    - toc.follow  # 随着文本内容移动，移动toc
     - navigation.top  # 返回顶部按钮
     - navigation.footer  # footer 上一页下一页导航启用
+    - content.code.copy  # 代码复制按钮
 
 # markdown插件
 markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: false
-  - toc:
-      permalink: true
-  - footnotes
-  - meta
-  - def_list
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
+  - pymdownx.arithmatex:  # material模板官方数学配置
+      generic: true
+  - pymdownx.emoji:  # emoji设置
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.betterem:  # 支持**bold**和_italic_语法
       smart_enable: all
-  - pymdownx.caret
+  - toc:  # 自动从文档生成目录
+      permalink: true  # 此选项添加包含段落符号的锚链接符号 
+      # title: 目录 # 设置目录的title，一般可以随着语言的变化自动变化，所以这里注释掉
+  - md_in_html  # 开启一些html渲染
+  - def_list  # 定义列表
+  - pymdownx.tasklist:  # 定义任务列表
+      custom_checkbox: true  # checkbox
+  # 以下功能有组合作用，为了支持高亮等格式，建议都打开
   - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.keys
   - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist
   - pymdownx.tilde
+  # 以上功能有组合作用，为了支持高亮等格式，建议都打开
+  - footnotes  # 脚注支持
+  - tables  # Markdown表格支持，正常情况下应该是默认开启的，但是为了保险起见，显式的写出来
+  # 以下配置在代码块和内联代码块上启用语法高亮显示
+  - pymdownx.highlight:
+      linenums: true  # 全局代码添加行号
+      auto_title: true  # 给代码块加一个标题，显示语言类型
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # 高亮显示配置结束
+  # 启用对 Mermaid.js 图表支持
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Mermaid.js 图表支持配置结束
 
-# 数学公式支持，需要额外的js
+# 数学公式支持，需要额外的js，现在使用的material模板官方配置
 extra_javascript:
-    - '_javascripts/extra.js'
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - _javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-
-
-# 支持中文搜索，虽然原生暂时不支持，但发现设置成日语后也能够同时中英搜索
-extra:
-  search:
-    language: 'jp'
+# 插件
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'  # 中文搜索支持
 
 # copyright
 copyright: Copyright &copy; 2021 - Present | Zhaoyang Song.
