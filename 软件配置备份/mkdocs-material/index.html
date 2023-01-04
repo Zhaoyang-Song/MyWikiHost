@@ -89,9 +89,7 @@
     
       
 
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="MyWiki" class="md-header__button md-logo" aria-label="MyWiki" data-md-component="logo">
       
@@ -188,8 +186,14 @@
     
   </nav>
   
+</header>
     
+    <div class="md-container" data-md-component="container">
       
+      
+        
+          
+            
 <nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -227,13 +231,7 @@
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -361,8 +359,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-upgrading" class="md-nav__link">
+    Installation &amp; Upgrading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     构建和预览项目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    Project layout
   </a>
   
 </li>
@@ -377,6 +389,61 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     数学公式支持
+  </a>
+  
+    <nav class="md-nav" aria-label="数学公式支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    第三方方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-for-mkdocs" class="md-nav__link">
+    Material for MkDocs 模板的官方方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tex" class="md-nav__link">
+    TeX渲染测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    中文搜索支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    无序列表 &amp; 任务列表
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-using-plugins" class="md-nav__link">
+    Installing &amp; Using Plugins
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
   </a>
   
 </li>
@@ -470,8 +537,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-upgrading" class="md-nav__link">
+    Installation &amp; Upgrading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     构建和预览项目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    Project layout
   </a>
   
 </li>
@@ -486,6 +567,61 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     数学公式支持
+  </a>
+  
+    <nav class="md-nav" aria-label="数学公式支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    第三方方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-for-mkdocs" class="md-nav__link">
+    Material for MkDocs 模板的官方方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tex" class="md-nav__link">
+    TeX渲染测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    中文搜索支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    无序列表 &amp; 任务列表
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-using-plugins" class="md-nav__link">
+    Installing &amp; Using Plugins
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
   </a>
   
 </li>
@@ -512,27 +648,78 @@
   <h1>mkdocs-material</h1>
 
 <h2 id="github-pages">发布至 GitHub Pages<a class="headerlink" href="#github-pages" title="Permanent link">&para;</a></h2>
-<p>在本地git目录下执行</p>
-<div class="highlight"><pre><span></span><code>mkdocs gh-deploy
-</code></pre></div>
+<p>在本地git目录下执行：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div></td></tr></table></div>
+<p>本地先启动查看：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div></td></tr></table></div>
+<h2 id="installation-upgrading">Installation &amp; Upgrading<a class="headerlink" href="#installation-upgrading" title="Permanent link">&para;</a></h2>
+<p>mkdocs installation:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+</code></pre></div></td></tr></table></div>
+<p>mkdocs upgrading:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>mkdocs
+</code></pre></div></td></tr></table></div>
+<p>mkdocs-material 模板 installation:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
+</code></pre></div></td></tr></table></div>
+<p>mkdocs-material 模板 upgrading:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>--force-reinstall<span class="w"> </span>mkdocs-material
+</code></pre></div></td></tr></table></div>
 <h2 id="_1">构建和预览项目<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs new yourProjectName
-cd yourProjectName
-mkdocs serve
-
-# 已有项目想本地预览，则直接cd到含mkdocs.yml的目录
-mkdocs serve
-</code></pre></div>
+<p>Create a new project:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span><span class="o">[</span>dir-name<span class="o">]</span>
+</code></pre></div></td></tr></table></div>
+<p>已有项目想本地预览，则直接cd到含mkdocs.yml的目录：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="o">[</span>dir-name<span class="o">]</span>
+</code></pre></div></td></tr></table></div>
+<p>Start the live-reloading docs server:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div></td></tr></table></div>
+<p>Print help message and exit:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs<span class="w"> </span>-h
+</code></pre></div></td></tr></table></div>
 <p>本地预览入口：<a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre></div></td></tr></table></div>
 <h2 id="mkdocs">mkdocs层级关系<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h2>
 <p>一个 <code>.md</code> 里只能有一个 <code>#</code>（h1），下面是多个 <code>##</code>。</p>
 <p>如果有多个 <code>#</code>（h1），则是不标准的目录结构，不会自动生产目录。</p>
 <p>如果 <code>.md</code> 没有用 <code>#</code>（h1），则mkdocs会自动将该文件在mkdocs.yml里对应的page名用h1效果展示在第一行。</p>
 <h2 id="_2">数学公式支持<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>用于TeX数学公式的展示，使用之前要先在docs/里创建javascripts目录，并在目录中放置extra.js。这意味着每新建一个项目后都要重新配置！</p>
-<p>我的习惯是，新建文件夹命名为 <code>_javascripts</code></p>
+<p>用于TeX数学公式的展示，使用之前要先在 <code>docs/</code> 里创建用于存储 javascripts 脚本的目录，并在目录中放置用于数学渲染的 js 脚本文件。</p>
+<p>我的习惯是，存储js脚本的文件夹命名为 <code>_javascripts</code></p>
+<p><span style="background:#FFFFBB;">这意味着每新建一个项目后都要重新配置。</span></p>
+<h3 id="_3">第三方方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><code>docs/_javascripts/extra.js</code> 文件：</p>
-<div class="highlight"><pre><span></span><code><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">tex2jax</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">inlineMath</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;\\(&quot;</span><span class="p">,</span><span class="s2">&quot;\\)&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">],</span>
 <span class="w">    </span><span class="nx">displayMath</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;\\[&quot;</span><span class="p">,</span><span class="s2">&quot;\\]&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">]</span>
@@ -552,25 +739,139 @@ mkdocs serve
 <span class="w">  </span><span class="nx">showProcessingMessages</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">messageStyle</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span>
 <span class="p">};</span>
-</code></pre></div>
-<p>然后在mkdocs.yml里添加如下内容，用于导入js：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
+</code></pre></div></td></tr></table></div>
+<p>然后在 <code>mkdocs.yml</code> 里添加如下内容，用于导入js：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;_javascripts/extra.js&#39;</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML&#39;</span>
-</code></pre></div>
-<p>测试一下行间公式：</p>
-<div class="arithmatex">
-<div class="MathJax_Preview">
+</code></pre></div></td></tr></table></div>
+<h3 id="material-for-mkdocs">Material for MkDocs 模板的官方方法<a class="headerlink" href="#material-for-mkdocs" title="Permanent link">&para;</a></h3>
+<p>通过 MathJax 渲染块和内联块方程。</p>
+<p><code>docs/_javascripts/extra.js</code> 文件：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">tex</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">inlineMath</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="s2">&quot;\\(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\\)&quot;</span><span class="p">]],</span>
+<span class="w">    </span><span class="nx">displayMath</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="s2">&quot;\\[&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\\]&quot;</span><span class="p">]],</span>
+<span class="w">    </span><span class="nx">processEscapes</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">processEnvironments</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">options</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">ignoreHtmlClass</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.*|&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">processHtmlClass</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;arithmatex&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nb">document</span><span class="nx">$</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">MathJax</span><span class="p">.</span><span class="nx">typesetPromise</span><span class="p">()</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p>配置文件中加入：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># material模板官方数学配置</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.arithmatex</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">generic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># 数学公式支持，需要额外的js，现在使用的material模板官方配置</span>
+<span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_javascripts/mathjax.js</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://polyfill.io/v3/polyfill.min.js?features=es6</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="tex">TeX渲染测试<a class="headerlink" href="#tex" title="Permanent link">&para;</a></h3>
+<p>行间公式：</p>
+<div class="arithmatex">\[
 e^{ix} = \cos x + i\sin x
-</div>
-<script type="math/tex; mode=display">
-e^{ix} = \cos x + i\sin x
-</script>
-</div>
-<p>行内公式：<span class="arithmatex"><span class="MathJax_Preview">E = mc^2</span><script type="math/tex">E = mc^2</script></span></p>
+\]</div>
+<p>行内公式：<span class="arithmatex">\(E = mc^2\)</span></p>
 <blockquote>
-<p><strong>注意：有时发现数学公式渲染失败，大概率是由于语法不规范，记住行间公式 <code>$$</code> 前后要空行，不能连着（在Typora中，连着数学公式也是能渲染出来的，但mkdocs不行）</strong></p>
+<p><strong>注意：数学公式渲染失败大概率是由于语法不规范，记住行间公式 <code>$$</code> 前后要空行，不能连着（在Typora中，前后行文字与 <code>$$</code> 连着数学公式也是能渲染出来的，但mkdocs不行）</strong></p>
+<p><strong>有时加载不出数学公式，刷新一下就好</strong></p>
 </blockquote>
+<h2 id="_4">中文搜索支持<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>需要 <code>jieba</code> 库，如果没有则先安装：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>jieba
+</code></pre></div></td></tr></table></div>
+<p>启用：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 插件</span>
+<span class="nt">plugins</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[\s\u200b\-]&#39;</span><span class="w">  </span><span class="c1"># 中文搜索支持</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_5">无序列表 &amp; 任务列表<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>启用：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">def_list</span><span class="w">  </span><span class="c1"># 定义列表</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span><span class="w">  </span><span class="c1"># 定义任务列表</span>
+<span class="w">      </span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div></td></tr></table></div>
+<p>使用时，二级必须缩进一个 <code>Tab</code> 才能渲染成功，Typora缩进空格就行，注意差异。</p>
+<p>任务列表测试：</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> MATLAB</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Python<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Matplotlab</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tensorflow</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> SQL</li>
+</ul>
+<h2 id="installing-using-plugins">Installing &amp; Using Plugins<a class="headerlink" href="#installing-using-plugins" title="Permanent link">&para;</a></h2>
+<p>在使用插件之前，它必须安装在系统上，如果是第三方插件，则需要先使用 <code>pip</code> 安装： </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-foo-plugin
+</code></pre></div></td></tr></table></div>
+<p>使用举例：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">YAML</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+<span class="w">        </span><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bar</span>
+</code></pre></div></td></tr></table></div>
+<p>具体插件配置请参考插件文档。</p>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.mkdocs.org/">MkDocs 官网</a></p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<p><a href="https://github.com/mkdocs/mkdocs/wiki">mkdocs/mkdocs Wiki</a></p>
+<p><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins">MkDocs Plugins · mkdocs/mkdocs Wiki</a></p>
+<p><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes · mkdocs/mkdocs Wiki</a></p>
+<p><a href="https://github.com/pawamoy/best-of-mkdocs">pawamoy/best-of-mkdocs：很棒的 MkDocs 项目和插件</a></p>
+<p><a href="https://github.com/danielfrg/mkdocs-jupyter">danielfrg/mkdocs-jupyter：在 MKDocs 中使用 Jupyter Notebook</a></p>
+<p><a href="https://github.com/unverbuggt/mkdocs-encryptcontent-plugin">unverbuggt/mkdocs-encryptcontent-plugin：使用 AES 加密/解密 markdown 内容的 MkDocs 插件</a></p>
+<p><a href="https://github.com/byrnereese/mkdocs-minify-plugin">byrnereese/mkdocs-minify-plugin：用于在将页面写入磁盘之前缩小页面的 MkDocs 插件</a></p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/setup/building-for-offline-usage/#built-in-offline-plugin">Building for offline usage - Material for MkDocs</a></p>
 
 
 
@@ -655,14 +956,16 @@ e^{ix} = \cos x + i\sin x
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "toc.follow", "navigation.top", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-        <script src="../../_javascripts/extra.js"></script>
+        <script src="../../_javascripts/mathjax.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
