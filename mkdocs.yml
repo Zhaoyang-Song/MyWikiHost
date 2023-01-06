@@ -1,7 +1,7 @@
 # 站点信息
 site_name: MyWiki
 site_description: MyWikiHost
-site_author: Zhaoyang Song
+site_author: Zhaoyang-Song
 site_url: https://zhaoyang-song.github.io/MyWikiHost
 
 # 右上角仓库设置
@@ -12,10 +12,10 @@ repo_name: Zhaoyang-Song/MyWikiHost
 nav:
   - Home: index.md
   - 软件配置备份:
-      - mkdocs-material: 软件配置备份/mkdocs-material.md
-      - zotero: 软件配置备份/zotero.md
+      - zotero: 软件配置备份/Zotero.md
       - SumatraPDF: 软件配置备份/SumatraPDF.md
       - vscode配置LaTeX: 软件配置备份/VSCode配置LaTeX.md
+      - mkdocs-material: 软件配置备份/mkdocs-material.md
 
 # 主题设置
 theme:
@@ -87,7 +87,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  # 以上功能有组合作用，为了支持高亮等格式，建议都打开
+  ####
   - footnotes  # 脚注支持
   - tables  # Markdown表格支持，正常情况下应该是默认开启的，但是为了保险起见，显式的写出来
   # 以下配置在代码块和内联代码块上启用语法高亮显示
@@ -96,14 +96,14 @@ markdown_extensions:
       auto_title: true  # 给代码块加一个标题，显示语言类型
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  # 高亮显示配置结束
+  ####
   # 启用对 Mermaid.js 图表支持
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  # Mermaid.js 图表支持配置结束
+  ####
 
 # 数学公式支持，需要额外的js，现在使用的material模板官方配置
 extra_javascript:
