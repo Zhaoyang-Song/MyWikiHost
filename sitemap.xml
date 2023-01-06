@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/CAJ%E8%BD%ACPDF/</loc>
+         <lastmod>2023-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/SumatraPDF/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/VSCode%E9%85%8D%E7%BD%AELaTeX/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/Zotero/</loc>
+         <lastmod>2023-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/mkdocs-material/</loc>
-         <lastmod>2023-01-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/zotero/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
