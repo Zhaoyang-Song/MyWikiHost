@@ -11,11 +11,17 @@ repo_name: Zhaoyang-Song/MyWikiHost
 # 导航设置
 nav:
   - Home: index.md
-  - 软件配置备份:
-      - zotero: 软件配置备份/Zotero.md
-      - SumatraPDF: 软件配置备份/SumatraPDF.md
-      - vscode配置LaTeX: 软件配置备份/VSCode配置LaTeX.md
-      - mkdocs-material: 软件配置备份/mkdocs-material.md
+  - 工具:
+      - CAJ转PDF: 工具/CAJ转PDF.md
+      - PDF导航添加工具: 工具/PDF导航添加工具.md
+  - 软件配置:
+      - zotero: 软件配置/Zotero.md
+      - SumatraPDF: 软件配置/SumatraPDF.md
+      - vscode配置LaTeX: 软件配置/VSCode配置LaTeX.md
+      - RSS: 软件配置/RSS.md
+      - web: 软件配置/web.md
+      - mkdocs-material: 软件配置/mkdocs-material.md
+
 
 # 主题设置
 theme:
