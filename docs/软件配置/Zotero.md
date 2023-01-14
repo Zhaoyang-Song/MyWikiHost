@@ -154,6 +154,8 @@ async function getFilePath(item) { //1 函数
 
 [eschnett/zotero-citationcounts - 获取文献的被引用次数](https://github.com/eschnett/zotero-citationcounts)
 
+[l0o0/translators_CN: Zotero translator中文网页抓取插件](https://github.com/l0o0/translators_CN)
+
 ## Links
 
 [Zotero CN](https://zotero-cn.github.io/)
