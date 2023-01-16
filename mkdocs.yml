@@ -14,6 +14,7 @@ nav:
   - 工具:
       - CAJ转PDF: 工具/CAJ转PDF.md
       - PDF导航添加工具: 工具/PDF导航添加工具.md
+      - 外文翻译: 工具/外文翻译.md
   - 软件配置:
       - zotero: 软件配置/Zotero.md
       - SumatraPDF: 软件配置/SumatraPDF.md
