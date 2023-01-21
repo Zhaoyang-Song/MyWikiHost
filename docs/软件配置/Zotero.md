@@ -146,7 +146,20 @@ async function getFilePath(item) { //1 函数
 
 ## Zotero IF 插件
 
-该插件由“青柠学术”开发，需要去公众号回复获得安装包（作者github上也有号，但还是引流回微信公众号了）
+该插件由“青柠学术”开发，需要去公众号回复获得安装包（作者GitHub上也有号，但还是引流回微信公众号了）
+
+## WebDAV
+
+每次记得：打开坚果云，打开关闭zotero时候记得右上角手动同步
+
+Papership或Zotero使用webDAV验证服务器不成功：打开坚果云官网，登录坚果云账号，在zotero文件夹下面新建空白的 `lastsync.txt` 文件，务必注意的是，必须使用坚果云自带的新建文件工具来新建空白的 `lastsync.txt` 文件，不能通过手动上传的方式。
+
+- 坚果云 (WebDAV)
+- PaperShip (ios)
+- Zoo for Zotero (Android)
+
+文件同步后无法打开，可能是由于是Linked的文件。这个时候在主面板，工具`-->`管理附件`-->`转换已链接文件为已经储存文件
+
 
 ## 插件备份
 
