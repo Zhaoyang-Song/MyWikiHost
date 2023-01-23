@@ -6,3 +6,13 @@
 
 [poole/poole: The Jekyll Butler. A no frills responsive Jekyll blog theme](https://github.com/poole/poole)
 
+## Web 导航站
+
+[WebStackPage/WebStackPage.github.io: ❤️静态响应式网址导航网站](https://github.com/WebStackPage/WebStackPage.github.io)
+
+## IDM
+
+[Internet Download Manager 6.41.6 (IDM)](https://www.423down.com/575.html)
+
+
+

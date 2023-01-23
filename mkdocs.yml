@@ -16,6 +16,7 @@ nav:
       - PDF导航添加工具: 工具/PDF导航添加工具.md
       - 外文翻译: 工具/外文翻译.md
       - todo.txt: 工具/todo.txt.md
+      - 文件备份: 工具/文件备份.md
   - 软件配置:
       - zotero: 软件配置/Zotero.md
       - SumatraPDF: 软件配置/SumatraPDF.md
