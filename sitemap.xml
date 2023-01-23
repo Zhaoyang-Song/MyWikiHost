@@ -2,57 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/CAJ%E8%BD%ACPDF/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/PDF%E5%AF%BC%E8%88%AA%E6%B7%BB%E5%8A%A0%E5%B7%A5%E5%85%B7/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/todo.txt/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/%E5%A4%96%E6%96%87%E7%BF%BB%E8%AF%91/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zhaoyang-song.github.io/MyWikiHost/%E5%B7%A5%E5%85%B7/%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/</loc>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/RSS/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/SumatraPDF/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/VSCode%E9%85%8D%E7%BD%AELaTeX/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/Zotero/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/mkdocs-material/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhaoyang-song.github.io/MyWikiHost/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/web/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
