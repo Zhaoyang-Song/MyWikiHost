@@ -1,4 +1,4 @@
-## 3个关键轴
+## `todo.txt` 的3个关键轴
 
 使用特殊符号可以创建一个可按 3 个关键轴切片的列表。
 
@@ -15,6 +15,8 @@
 拆分任务列表，即从事工作的地点和情况。您需要发送的消息在@email上下文中；电话@phone，家庭项目@home。
 
 ## Links
+
+[gsantner/markor: Text editor - Notes & ToDo (for Android)](https://github.com/gsantner/markor)
 
 [todotxt/todo.txt: ‼️ A complete primer on the whys and hows of todo.txt.](https://github.com/todotxt/todo.txt)
 
