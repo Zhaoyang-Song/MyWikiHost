@@ -244,6 +244,22 @@
   
 
       
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Android/%E6%99%BA%E6%85%A7%E5%B1%8F/" class="md-tabs__link">
+        Android
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -507,6 +523,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#zotero" class="md-nav__link">
+    Zotero 插件开发
+  </a>
+  
+    <nav class="md-nav" aria-label="Zotero 插件开发">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zotero_1" class="md-nav__link">
+    Zotero 经典插件的目录结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     插件备份
   </a>
@@ -537,6 +573,20 @@
     <li class="md-nav__item">
       <a href="../SumatraPDF/" class="md-nav__link">
         SumatraPDF
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Music/" class="md-nav__link">
+        Music
       </a>
     </li>
   
@@ -619,6 +669,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Android
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Android" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Android
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Android/%E6%99%BA%E6%85%A7%E5%B1%8F/" class="md-nav__link">
+        智慧屏
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -675,6 +773,26 @@
   <a href="#webdav" class="md-nav__link">
     WebDAV
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zotero" class="md-nav__link">
+    Zotero 插件开发
+  </a>
+  
+    <nav class="md-nav" aria-label="Zotero 插件开发">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zotero_1" class="md-nav__link">
+    Zotero 经典插件的目录结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -956,6 +1074,59 @@
 <li>Zoo for Zotero (Android)</li>
 </ul>
 <p>文件同步后无法打开，可能是由于是Linked的文件。这个时候在主面板，工具<code>--&gt;</code>管理附件<code>--&gt;</code>转换已链接文件为已经储存文件</p>
+<h2 id="zotero">Zotero 插件开发<a class="headerlink" href="#zotero" title="Permanent link">&para;</a></h2>
+<p><a href="https://zotero.yuque.com/staff-gkhviy/developer">Zotero 插件开发中文文档</a></p>
+<h3 id="zotero_1">Zotero 经典插件的目录结构<a class="headerlink" href="#zotero_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code>├── chrome
+│   ├── content
+│   │   ├── overlay.xul
+│   │   ├── preferences.xul
+│   │   └── scripts
+│   │       ├── preferences.js
+│   │       └── zoteroscihub.js
+│   ├── locale
+│   │   └── en-US
+│   │       └── overlay.dtd
+│   └── skin
+│       └── default
+│           └── zoteroscihub
+│               ├── favicon.png
+│               └── overlay.css
+├── chrome.manifest
+├── install.rdf
+├── LICENSE
+└── README.md
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>chrome 目录，插件代码，弹窗菜单，设置窗口等代码</li>
+<li>chrome.manifest</li>
+<li>install.rdf </li>
+<li>
+<p>LICENSE 项目开源许可协议文件</p>
+</li>
+<li>
+<p>README.md</p>
+</li>
+</ul>
+<p>这里我们只关注 <strong>install.rdf</strong> 和 chrome目录下的 <strong>zoteroscihub.js</strong> 文件，后续教程中的简单功能也是通过修改这些文件来完成。</p>
 <h2 id="_1">插件备份<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/bwiernik/zotero-shortdoi">bwiernik/zotero-shortdoi - 获取文献的DOI</a></p>
 <p><a href="https://github.com/eschnett/zotero-citationcounts">eschnett/zotero-citationcounts - 获取文献的被引用次数</a></p>
