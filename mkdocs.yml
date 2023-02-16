@@ -12,11 +12,13 @@ repo_name: Zhaoyang-Song/MyWikiHost
 nav:
   - Home: index.md
   - 工具:
-      - CAJ转PDF: 工具/CAJ转PDF.md
+      - CAJ2PDF: 工具/CAJ2PDF.md
+      - md-TOC: 工具/md-TOC.md
       - PDF导航添加工具: 工具/PDF导航添加工具.md
       - ENG: 工具/ENG.md
       - todo.txt: 工具/todo.txt.md
       - 文件备份: 工具/文件备份.md
+      - PDG2PDF: 工具/PDG2PDF.md
   - 软件配置:
       - zotero: 软件配置/Zotero.md
       - SumatraPDF: 软件配置/SumatraPDF.md
@@ -24,6 +26,7 @@ nav:
       - vscode配置LaTeX: 软件配置/VSCode配置LaTeX.md
       - RSS: 软件配置/RSS.md
       - web: 软件配置/web.md
+      - ghpage-repository: 软件配置/ghpage-repository.md
       - WindowTabs: 软件配置/WindowTabs.md
       - mkdocs-material: 软件配置/mkdocs-material.md
   - Android:
