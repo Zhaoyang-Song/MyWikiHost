@@ -26,6 +26,7 @@ nav:
       - vscode配置LaTeX: 软件配置/VSCode配置LaTeX.md
       - RSS: 软件配置/RSS.md
       - web: 软件配置/web.md
+      - sync: 软件配置/sync.md
       - ghpage-repository: 软件配置/ghpage-repository.md
       - WindowTabs: 软件配置/WindowTabs.md
       - mkdocs-material: 软件配置/mkdocs-material.md
