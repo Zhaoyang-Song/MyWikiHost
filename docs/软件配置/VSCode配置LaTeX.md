@@ -6,6 +6,40 @@
 
 **正向搜索快捷键**：`Ctrl+Alt+J`（该快捷键为默认设置）
 
+##  VSCode+SumatraPDF进行双向搜索（Win）
+
+VSCode的配置文件 `settings.json` 中添加以下内容：（注意修改其中涉及到的路径以适配本机）
+
+```json
+    "latex-workshop.view.pdf.viewer": "external",
+
+    "latex-workshop.view.pdf.external.viewer.command": "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+            "-forward-search",
+            "%TEX%",
+            "%LINE%",
+            "-reuse-instance",
+            "%PDF%"
+    ], 
+
+    "latex-workshop.view.pdf.external.synctex.command": "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+            "-forward-search",
+            "%TEX%",
+            "%LINE%",
+            "-reuse-instance",
+            "%PDF%"
+    ]
+```
+
+SumatraPDF中，点击 `设置->选项`，在最下面的一栏中填入：（注意修改其中涉及到的路径以适配本机）
+
+````
+"C:\Users\roger\AppData\Local\Programs\Microsoft VS Code\Code.exe" "C:\Users\roger\AppData\Local\Programs\Microsoft VS  Code\resources\app\out\cli.js" --ms-enable-electron-run-as-node -r -g  "%f:%l"
+````
+
+VSCode的正向搜索快捷键默认的是 `Ctrl+Alt+J`
+
 ## Links
 
 [Visual Studio Code (vscode) 配置LaTeX](https://zhuanlan.zhihu.com/p/166523064)
